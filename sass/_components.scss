@@ -1,0 +1,51 @@
+.btn, .btn:link, .btn:visited{
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: .5rem 2rem;
+  transition: all .2s ease;
+}
+
+.btn-full, .btn-full:link, .btn-full:visited{
+  color: #fff;
+  background-color: $color-primary;
+}
+
+.btn-full:hover, .btn-full:active{
+  background-color: $color-primary-dark;
+}
+
+.btn-outline, .btn-outline:link, .btn-outline:visited{
+  color: $color-primary;
+  box-shadow: inset 0 0 0 2px $color-primary;
+}
+
+.btn-outline:hover, .btn-outline:active{
+  background-color: $color-primary;
+  color: #fff;
+}
+
+.btn-subscribe{
+  background-image: linear-gradient(to bottom, #fff, $color-primary-light);
+  display: inline-block;
+  border-radius: 100px;
+  padding: 2rem 4rem;
+  font-family: $font-primary;
+  border: none;
+  color: $color-primary-dark;
+  font-size: 2rem;
+
+  &:hover{
+  background-image: linear-gradient(to bottom, $color-primary-dark, $color-primary);
+  color: #fff;
+  }
+}
+
+.btn-hide{
+  @media only screen and (max-width: 48.93em){
+    display: none !important;
+ }
+  
+}
+
+

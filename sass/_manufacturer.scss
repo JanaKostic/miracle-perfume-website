@@ -1,0 +1,44 @@
+.manufacturer{
+  margin-bottom: 15rem;
+
+  &__b{
+
+    align-items: center;
+  }
+
+  &__img{
+    height: 50rem;
+    width: auto;
+
+    @media only screen and (max-width: 73.875em){
+      height: 35rem;
+    }
+
+    @media only screen and (max-width: 73.875em){
+      height: 35rem;
+    }
+
+    @media only screen and (max-width: 53.25em){
+      height: 30rem;
+    }
+
+    @media only screen and (max-width: $bp-medium3){
+      grid-row: 2 / -1;
+      margin-top: 5rem;
+      height: 40rem;
+      justify-self: center;
+    }
+  }
+
+  &__link{
+    color: $color-primary-dark;
+    text-decoration: none;
+    border-bottom: 2px dotted $color-primary-dark;
+    transition: all .2s;
+
+    &:hover{
+      color: $color-primary;
+    }
+  }
+
+}

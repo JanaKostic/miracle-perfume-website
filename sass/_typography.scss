@@ -1,0 +1,35 @@
+.heading--1{
+  font-family: $font-display;
+  line-height: 1.1;
+  letter-spacing: 2px;
+
+  &__color{
+    color: $color-primary;
+  }
+
+  @media only screen and (max-width: $bp-large){
+    font-size: 4rem;
+  }
+}
+
+.heading--2{
+  font-family: $font-display;
+  letter-spacing: 2px;
+  font-size: 5rem;
+}
+
+.heading--3{
+  font-family: $font-display;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.heading--4{
+  font-family: $font-display;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+

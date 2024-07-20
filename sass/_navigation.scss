@@ -1,0 +1,126 @@
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  &__logo{
+    height: 6rem;
+    width: auto;
+  }
+
+  &__list{
+    display: flex;
+    list-style: none;
+  }
+
+  &__link{
+    text-decoration: none;
+    color: $color-grey;
+    padding: 0 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    }
+
+    &__item{
+      transition: all .2s ease;
+      &:hover{
+        box-shadow: 0 0 10px 5px $color-primary-light;
+        border-radius: 100px;
+      }
+    }
+}
+
+//mobile
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+
+  @media only screen and (max-width: 48.93em){
+    display: block;
+    z-index: 9999;
+  }
+  
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: $color-primary;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.navigation__nav {
+
+    @media only screen and (max-width: 48.93em){
+      background-color: rgba(255, 255, 255, 0.7);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      transform: translateX(100%);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease-in;
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+  }
+}
+
+.nav-open .navigation__nav {
+
+  @media only screen and (max-width: 48.93em){
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+.nav-open .icon-mobile-nav[name="close-outline"] {
+
+  @media only screen and (max-width: 48.93em){
+    display: block;
+  }
+  
+}
+
+.nav-open .icon-mobile-nav[name="menu-outline"] {
+
+  @media only screen and (max-width: 48.93em){
+     display: none;
+  }
+ 
+}
+
+.navigation__list {
+
+  @media only screen and (max-width: 48.93em){
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+  
+
+.navigation__link:link,
+.navigation__link:visited {
+
+  @media only screen and (max-width: 48.93em){
+     font-size: 3rem;
+  }
+}
+
+

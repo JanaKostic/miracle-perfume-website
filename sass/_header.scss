@@ -1,0 +1,35 @@
+.header{
+
+  align-items: center;
+  margin: 8rem 0;
+
+  @media only screen and (max-width: $bp-medium3){
+    margin: 0 0 8rem 0;
+  }
+
+  &__img{
+    height: 70rem;
+    width: auto;
+    justify-self: end;
+
+    @media only screen and (max-width: 80.31em){
+      height: 55rem;
+    }
+
+    @media only screen and (max-width: 69.68em){
+      height: 50rem;
+    }
+
+    @media only screen and (max-width: 53.25em){
+      height: 47rem;
+    }
+
+    @media only screen and (max-width: $bp-medium3){
+      justify-self: center;
+      height: 55rem;
+      grid-row: 1 / 2;
+    }
+
+    
+  }
+}

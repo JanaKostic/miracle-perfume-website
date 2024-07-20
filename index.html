@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="sass/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="js/script.js"></script>
+
+  <title>miracle &mdash; smells like heaven</title>
+</head>
+<body>
+
+  <div class="navigation container">
+    <img src="img/logo.png" alt="logo" class="navigation__logo">
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link">Menu</a></li>
+        <li class="navigation__item"><a href="#product" class="navigation__link">About product</a></li>
+        <li class="navigation__item"><a href="#manufacturer" class="navigation__link">Manufacturer</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="tel:0100 110 011" class=" btn btn-outline btn-hide">0100 110 011</a>
+
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+  </div>
+
+  <header class="header container grid--col--2 col-2">
+    <div class="header__box grid--row--3">
+      <h1 class="heading--1"> <span class="heading--1__color">Miracle</span> - new perfume with heavenly smell</h1>
+      <p class="header__text">Consectetur adipisicing elit. 
+        Officiis reiciendis incidunt odit voluptatibus praesentium totam blanditiis. Totam, quam, 
+        eligendi sunt cumque.</p>
+      <a href="#" class="btn btn-full">I want to try</a>
+    </div>
+    <img src="img/hero.png" alt="miracle perfume" class="header__img">
+  </header>
+
+  <main>
+    <div class="about container">
+      <div class="background"></div>
+      <div class="glass"></div>
+      <div class="about__items grid--col--2">
+        <img src="img/girl-card.png" alt="happy girl with perfume" class="about__img">
+        <div class="about__box">
+          <h3 class="heading--3 mb-sm mt-sm">Miracle - formula</h3>
+          <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque ipsam p
+            ariatur odit est quas nisi fuga, <br> officia vero illum eum id aut cumque? 
+            Dignissimos magni facere hic incidunt delectus rem?</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="product container" id="product">
+      <h2 class="heading--2 center mb-sm">About product</h2>
+      <div class=" product__box">
+        <div class="product__text grid--row--3">
+          <h4 class="heading--4">Perfume</h4>
+          <p class="product__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo impedit accusamus saepe nesciunt eaque tempore! 
+            Vitae numquam enim a molestias consectetur fuga odio fugit officia beatae quia eos, fugiat sit. elit. Explicabo impedit accusamus saepe nesciunt eaque tempore! 
+            Vitae numquam enim a molestias consectetur fuga odio fugit offici</p>
+          <p class="product__price"><span class="dollar">$</span>210.00 / 100ml</p>
+          <a href="#" class="btn btn-full">Buy now</a>
+        </div> 
+        <img src="img/product.png" alt="image of the product" class="product__img">
+      </div>
+    </div>
+
+    <div class="manufacturer container" id="manufacturer">
+      <div class="manufacturer__b grid--col--2 col-3">
+        <img src="img/certificate.png" alt="certificate" class="manufacturer__img">
+        <div class="manufacturer__box grid--row--3">
+          <h2 class="heading--2">Manufacturer</h2>
+          <p class="manufacturer__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquam 
+            ipsum debitis, saepe, fuga quasi, fugit dolore maxime ex quos consequatur commodi minima eveniet 
+            eligendi ipsa nulla accusantium non? Ipsum.
+          </p>
+          <p class="manufacturer__text">Repudiandae aliquam 
+            ipsum debitis, saepe, fuga quasi, fugit dolore maxime ex quos consequatur commodi minima eveniet 
+            eligendi ipsa nulla accusantium non? Ipsum.</p>
+          <a href="#" class="manufacturer__link">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="features container grid--col--4">
+      <div class="features__item">
+        <p class="features__num">10</p>
+        <p class="features__text">years on the market</p>
+      </div>
+      <div class="features__item">
+        <p class="features__num">N<span>o</span>1</p>
+        <p class="features__text">in fragrance production</p>
+      </div>
+      <div class="features__item">
+        <p class="features__num">30</p>
+        <p class="features__text">natural ingredients</p>
+      </div>
+      <div class="features__item">
+        <p class="features__num">1M+</p>
+        <p class="features__text">clients, loyal to our brand</p>
+      </div>
+    </div>
+
+    <div class="subscribe container">
+      <div class="subscribe__box">
+        <h3 class="heading--3 center">Subsribe to our newslatter</h3>
+        <p class="subscribe__text center">Get the latest information directly from us!</p>
+        <form action="#" class="subscribe__form">
+          <input type="email" placeholder="E-mail:" class="subscribe__email" required>
+          <button class="btn btn-subscribe">Subscribe</button>
+        </form>
+        <img src="img/1.png" alt="leaves" class="subscribe__img-1">
+        <img src="img/2.png" alt="leaves" class="subscribe__img-2">
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer__box grid--col--3">
+      <div class="footer__logo">
+        <img src="img/logo.png" alt="logo" class="footer__img">
+        <p class="footer__copyright">Copyright &copy; <span class="year">2023</span> by Jana Kostic</p>
+      </div>
+      <div class="footer__contact">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="tel:0100 110 011" class="footer__link">0100 110 011</a></li>
+          <li class="footer__item"><a href="mailto:miracle@example.com" class="footer__link">miracle@example.com</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="footer__socials">
+        <ul class="footer__icons">
+          <li class="footer__icon"><ion-icon name="logo-instagram" class="footer__ico"></ion-icon></li>
+          <li class="footer__icon"><ion-icon name="logo-facebook" class="footer__ico"></ion-icon></li>
+          <li class="footer__icon"><ion-icon name="logo-youtube" class="footer__ico"></ion-icon></li>
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
